@@ -1,0 +1,130 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fundo do site */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #0a0a0a;
+  color: #fefbfb;
+}
+
+/* Cabeçalho com transparência */
+header {
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(13, 145, 46, 0.6);
+  backdrop-filter: blur(4px);
+  color: #fdfdfd;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(43, 43, 249, 0.6);
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* Conteúdo principal */
+main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Títulos */
+h1, h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+/* Seção das aulas */
+.aulas h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Cartões das aulas */
+.aula-card {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de hover nos cartões */
+.aula-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 24px rgb(253, 255, 255);
+}
+
+/* Botões */
+.aula-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background: #00aaff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.aula-card a:hover {
+  background: #fcfdfd;
+}
+
+/* Bloco do PDF (funciona para todas as páginas que tenham esta classe) */
+.material-pdf {
+  text-align: center;
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+.material-pdf p {
+  margin-bottom: 10px;
+  color: #fefbfb;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.material-pdf a {
+  color: #ffcc00;
+  background-color: transparent;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 1px solid #ffcc00;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.material-pdf a:hover {
+  background-color: #ffcc00;
+  color: #0a0a0a;
+  text-decoration: none;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .aula-card {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
